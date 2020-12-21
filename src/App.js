@@ -72,7 +72,7 @@ function App() {
         <h3>
           Source Code:
         </h3>
-        <a href="https://github.com/kingaspx/ImagePreview-React" target={'_blank'} style={{marginTop: -10}}>
+        <a href="https://github.com/kingaspx/ImagePreview-React" rel="noreferrer" target={'_blank'} style={{marginTop: -10}}>
             Available on <b>Github</b>
         </a>
 
