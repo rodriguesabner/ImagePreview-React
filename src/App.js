@@ -68,6 +68,17 @@ function App() {
             }
           </div>
         </BoxUpload>
+
+        <h3>
+          Source Code:
+        </h3>
+        <a href="https://github.com/kingaspx/ImagePreview-React" target={'_blank'} style={{marginTop: -10}}>
+            Available on <b>Github</b>
+        </a>
+
+        <h3>
+          By Kingaspx
+        </h3>
       </Container>
     </Layout>
   );
