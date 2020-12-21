@@ -6,11 +6,12 @@ import CloseIcon from './assets/CloseIcon.svg'
 function App() {
   const [image, setImage] = useState('')
   const [isUploaded, setIsUploaded] = useState(false)
+  const [typeFile, setTypeFile] = useState('')
 
   function handleImageChange(e) {
     if (e.target.files && e.target.files[0]) {
+      setTypeFile(e.target.files[0].type)
       let reader = new FileReader()
-
 
       reader.onload = function (e) {
         setImage(e.target.result)
@@ -69,11 +70,19 @@ function App() {
           </div>
         </BoxUpload>
 
+        {
+          isUploaded ? (
+            <h2>
+              Type is {typeFile}
+            </h2>
+          ) : null
+        }
+
         <h3>
           Source Code:
         </h3>
-        <a href="https://github.com/kingaspx/ImagePreview-React" rel="noreferrer" target={'_blank'} style={{marginTop: -10}}>
-            Available on <b>Github</b>
+        <a href="https://github.com/kingaspx/ImagePreview-React" rel="noreferrer" target={'_blank'} style={{ marginTop: -10 }}>
+          Available on <b>Github</b>
         </a>
 
         <h3>
